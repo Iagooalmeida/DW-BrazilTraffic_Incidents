@@ -55,7 +55,7 @@ A análise dos incidentes de trânsito no Brasil utilizando o conjunto de dados 
 
 1. **Horários de pico de acidentes**:  
     - Foram identificados os momentos do dia em que ocorrem mais acidentes, proporcionando uma compreensão dos horários mais críticos para a segurança no trânsito.
-2. Meses com maior ocorrência de acidentes:  
+2. **Meses com maior ocorrência de acidentes:**  
     - Foi possível identificar os meses do ano com maior número de acidentes, destacando os períodos que requerem maior atenção e medidas preventivas.
 3. **Dias da semana com mais acidentes:**  
     - A análise revelou os dias da semana com maior incidência de acidentes, o que pode auxiliar na implementação de estratégias de fiscalização e prevenção específicas para esses dias.
@@ -72,4 +72,4 @@ A análise dos incidentes de trânsito no Brasil utilizando o conjunto de dados 
 
 ## Conclusão  
 
-A análise de incidentes de trânsito no Brasil nos últimos 17 anos fornece insights valiosos sobre o comportamento do tráfego e a segurança no trânsito no país. A compreensão das tendências, a identificação das rodovias mais perigosas e o reconhecimento das principais causas dos incidentes podem informar medidas preventivas e melhorar a segurança no trânsito. Essas informações são cruciais para gestores de tráfego, órgãos reguladores e profissionais envolvidos na segurança no trânsito, contribuindo para a redução de acidentes e salvando vidas.
+A análise de incidentes de trânsito no Brasil nos últimos 6 anos fornece insights valiosos sobre o comportamento do tráfego e a segurança no trânsito no país. A compreensão das tendências, a identificação das rodovias mais perigosas e o reconhecimento das principais causas dos incidentes podem informar medidas preventivas e melhorar a segurança no trânsito. Essas informações são cruciais para gestores de tráfego, órgãos reguladores e profissionais envolvidos na segurança no trânsito, contribuindo para a redução de acidentes e salvando vidas.
