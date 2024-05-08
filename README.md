@@ -16,7 +16,27 @@ Os dados incluem uma variedade de informações detalhadas sobre os incidentes d
 
 [Link da base de dados](https://www.kaggle.com/datasets/tgomesjuliana/police-traffic-incidents?select=Dados_PRF_2023.csv)  
 
-## Conjunto de Dados Modelo Estrela DW
+## Aplicações e Cenários  
+
+O conjunto de dados de Incidentes de Trânsito no Brasil pode ser empregado em diferentes domínios e cenários, tais como:
+
+1. Planejamento de Tráfego:
+    - Os dados podem ser utilizados para planejar rotas mais seguras e eficientes, considerando as rodovias com menor ocorrência de incidentes.
+2. Educação e Conscientização no Trânsito:
+    - Os dados podem ser usados para desenvolver campanhas de conscientização sobre as principais causas de incidentes de trânsito, promovendo uma cultura de segurança no tráfego.
+3. Melhoria da Infraestrutura:
+    - A análise dos dados pode auxiliar na identificação de trechos de rodovias com alta incidência de acidentes, direcionando recursos para a melhoria da infraestrutura nesses locais.  
+
+## Exploração e Visualização de Dados  
+
+A análise dos incidentes de trânsito foi realizada seguindo as etapas a seguir:
+
+1. **Carregamento e pré-processamento dos dados:** Os dados brutos foram importados para o Microsoft Fabric e transformados em um formato adequado para análise. Isso incluiu a extração das informações relevantes para as tabelas dimensionais e a criação da tabela de fatos.
+2. **Exploração e visualização dos dados**: Foram utilizadas consultas SQL para explorar os dados e gerar visualizações, como gráficos, para uma melhor compreensão dos incidentes de trânsito no Brasil.
+3. **Análise estatística:** Foram realizadas consultas SQL e cálculos estatísticos para identificar tendências, calcular estatísticas relevantes e obter insights sobre os incidentes de trânsito. Isso incluiu a contagem de incidentes por mês, a identificação das rodovias mais perigosas e a análise das causas e tipos de acidentes mais comuns.
+4. **Documentação e apresentação:** Os resultados da análise foram documentados em um relatório utilizando a formatação Markdown. O relatório inclui uma introdução, a descrição do conjunto de dados, a metodologia utilizada, os resultados obtidos e uma conclusão.
+
+## Data warehouse Modelo Estrela DW
 
 O conjunto de dados utilizado neste projeto é composto por várias tabelas armazenadas no banco de dados "dados_BrazilTraffic_Incidents" no ambiente Microsoft Fabric. As tabelas principais schema Star são as seguintes:
 
@@ -28,26 +48,6 @@ O conjunto de dados utilizado neste projeto é composto por várias tabelas arma
 6. **Fatos_Acidentes:** Esta tabela é a tabela de fatos principal, que relaciona os incidentes de trânsito com as informações das outras tabelas. Ela inclui o ID do acidente, o ID do radar, o ID da data, o ID da localização, o ID das condições, estatísticas sobre mortos, feridos leves, feridos graves, ilesos, ignorados, feridos e veículos envolvidos.
 
 ![Modelo Estrela - tabelas](img/Schema_Star_traffic.png)
-
-## Aplicações e Cenários  
-
-O conjunto de dados de Incidentes de Trânsito no Brasil pode ser empregado em diferentes domínios e cenários, tais como:
-
-1. Planejamento de Tráfego:
-    - Os dados podem ser utilizados para planejar rotas mais seguras e eficientes, considerando as rodovias com menor ocorrência de incidentes.
-2. Educação e Conscientização no Trânsito:
-    - Os dados podem ser usados para desenvolver campanhas de conscientização sobre as principais causas de incidentes de trânsito, promovendo uma cultura de segurança no tráfego.
-3. Melhoria da Infraestrutura:
-    - A análise dos dados pode auxiliar na identificação de trechos de rodovias com alta incidência de acidentes, direcionando recursos para a melhoria da infraestrutura nesses locais.
-
-## Exploração e Visualização de Dados  
-
-A análise dos incidentes de trânsito foi realizada seguindo as etapas a seguir:
-
-1. **Carregamento e pré-processamento dos dados:** Os dados brutos foram importados para o Microsoft Fabric e transformados em um formato adequado para análise. Isso incluiu a extração das informações relevantes para as tabelas dimensionais e a criação da tabela de fatos.
-2. **Exploração e visualização dos dados**: Foram utilizadas consultas SQL para explorar os dados e gerar visualizações, como gráficos, para uma melhor compreensão dos incidentes de trânsito no Brasil.
-3. **Análise estatística:** Foram realizadas consultas SQL e cálculos estatísticos para identificar tendências, calcular estatísticas relevantes e obter insights sobre os incidentes de trânsito. Isso incluiu a contagem de incidentes por mês, a identificação das rodovias mais perigosas e a análise das causas e tipos de acidentes mais comuns.
-4. **Documentação e apresentação:** Os resultados da análise foram documentados em um relatório utilizando a formatação Markdown. O relatório inclui uma introdução, a descrição do conjunto de dados, a metodologia utilizada, os resultados obtidos e uma conclusão.
 
 ## Resultados  
 
