@@ -20,25 +20,25 @@ UNION ALL
 SELECT * FROM LakehouseBrazilTraffic_Incidents.dbo.dados_prf_2023;
 
 --Selecionar as colunas que serão utilizadas para a criação das dimensões e fatos
-SELECT id, data_inversa, dia_semana, horario
+SELECT DISTINCT id, data_inversa, dia_semana, horario
 INTO [dados_BrazilTraffic_Incidents].[schema_star].[Dim_Data]
 FROM [dados_BrazilTraffic_Incidents].[dbo].[tb_dados_transito];
 
-SELECT id, uf, br, km, municipio, latitude, longitude
+SELECT DISTINCT id, uf, br, km, municipio, latitude, longitude
 INTO [dados_BrazilTraffic_Incidents].[schema_star].[Dim_Localizacao]
 FROM [dados_BrazilTraffic_Incidents].[dbo].[tb_dados_transito];
 
-SELECT id, condicao_metereologica, tipo_pista, tracado_via, uso_solo
+SELECT DISTINCT id, condicao_metereologica, tipo_pista, tracado_via, uso_solo
 INTO [dados_BrazilTraffic_Incidents].[schema_star].[Dim_Condicoes]
 FROM [dados_BrazilTraffic_Incidents].[dbo].[tb_dados_transito];
 
-SELECT id_radar, concessionaria, ano_do_pnv_snv, tipo_de_radar, rodovia, uf, km_m, 
+SELECT DISTINCT id_radar, concessionaria, ano_do_pnv_snv, tipo_de_radar, rodovia, uf, km_m, 
         municipio, tipo_pista, sentido, situacao, data_da_inativacao, latitude, 
         longitude, velocidade_leve, velocidade_pesado
 INTO [dados_BrazilTraffic_Incidents].[schema_star].[Dim_Radar]
 FROM [dados_BrazilTraffic_Incidents].[dbo].[tb_radares];
 
-SELECT id, causa_acidente, tipo_acidente, classificacao_acidente, fase_dia, sentido_via
+SELECT DISTINCT id, causa_acidente, tipo_acidente, classificacao_acidente, fase_dia, sentido_via
 INTO [dados_BrazilTraffic_Incidents].[schema_star].[Dim_Detalhes_Acidente]
 FROM [dados_BrazilTraffic_Incidents].[dbo].[tb_dados_transito];
 
